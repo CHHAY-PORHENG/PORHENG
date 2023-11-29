@@ -25,4 +25,9 @@ public class TransportService{
     public void setServiceType(ServiceType serviceType){
         this.serviceType = serviceType;
     }
+
+    public String getDescription(){
+        return "Transport service";
+    }
 }
+

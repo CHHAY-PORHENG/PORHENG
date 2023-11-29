@@ -37,6 +37,11 @@ public class Bus extends TransportService{
         this.availableSeats = availableSeats;
     }
 
+    @Override
+    public String getDescription(){
+        return "Bus service";
+    }
+
     // METHOD TO UPDATE AVAILABLE SEATS
     public void updateAvailableSeats(int bookedSeats){
         availableSeats -= bookedSeats;

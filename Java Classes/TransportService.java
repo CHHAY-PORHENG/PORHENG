@@ -29,5 +29,7 @@ public class TransportService{
     public String getDescription(){
         return "Transport service";
     }
+
+    public abstract String getDescription();
 }
 

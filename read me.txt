@@ -1,0 +1,147 @@
+Project: Online Bus Ticket Booking System
+Class: Object Oriented Concept ( OOC )
+Lecture: Lay Vatana
+Team: Book Me 
+-CHHAY PORHENG (Cyber Security)
+-ROCHOM MUNNY (Cyber Security)
+Year 2 Term 3
+____________________________________________________
+
+1. INTRODUCTION
+
+1.1 PROJECT IDEA
+
+The Online Bus Ticket Booking System is a web-based platform that allows users to book bus tickets conveniently. The system supports user registration, ticket booking, staff management, and admin monitoring functionalities.
+
+1.2 DETAIL INFORMATION
+
+Online Bus Ticket Booking offers a straightforward booking process. Users can access the platform and utilize the contact form to initiate the booking process. The system prioritizes responsiveness, aiming to reply promptly with a confirmation of the booking.
+
+HOW DOES IT WORK ? 
+
+The system is a practical solution for individuals to conveniently book bus tickets. Users can access the platform, select their desired transportation service (economic transport, VIP public transport, private car, luxurious transport, or collective local transportation), choose the destination within Cambodia, and reserve seats.
+
++User Registration or Login
+-Users begin by accessing the online platform.
+-New users can register by providing their name, email, and creating a password.
+-Returning users can log in using their credentials.
+
++Browsing Services
+-After authentication, users can browse available transportation services offered by Book Me Transport.
+-They can view details such as service type (economic, VIP, private, etc.), destinations, and bus details.
+
++Booking a Ticket
+-Users select a specific transport service based on their preferences.
+-They initiate the booking process, specifying the number of seats they want to reserve.
+-The system creates a new instance of the Booking class, associating it with the user, selected transport service, and bus.
+
++Payment Process
+-Users proceed to payment, selecting their preferred payment method.
+-The system creates a Payment instance, calculates the total amount, and associates it with the booking.
+-The payment is processed, updating the payment status and confirming the booking.
+
++Bus Seat Update
+-After successful payment, the system updates the available seats on the selected bus.
+-The Bus class's updateAvailableSeats method is invoked, reducing the available seats by the booked amount.
+
++Inquiry Submission
+-Users can submit inquiries at any point, either before or after booking.
+-The system creates an instance of the Inquiry class, associating it with the user.
+-Inquiries are processed, and the system manages them based on their status.
+
++User Management
+-Users can manage their bookings and inquiries through the system.
+-They can view their booking history, cancel bookings if allowed, and check the status of inquiries.
+
++System Administration (Optional):
+-Administrative users have additional capabilities.
+-They can manage transport services, buses, and user accounts.
+-This includes adding or removing services, updating bus information, and viewing user details.
+
++Logging Out
+-Users can log out of the system when they have completed their desired actions.
+
+WHAT IS THE FUNCTION?
+
+The primary function of the project is to facilitate the booking of bus tickets through an online platform. Users can fill out a contact form with their name, email, and inquiries. The system processes these requests and responds promptly with a booking confirmation. It supports various local services and uses minivans with a capacity of 10-15 passengers.
+
+2. KEY FEATURES AND FUNCTIONS
+
+User Registration and Account Management
+
+-Users can create an account by providing their first name, last name, email, phone number, date of birth, address, and payment account details.
+-Users can update their account information, manage bookings, and view their booking history.
+
+Bus Ticket Booking and Seat Selection
+
+-Users can search for available buses based on their desired date, time, and destination.
+-An intuitive interface allows users to select seats from a seating layout of the chosen bus.
+-The system ensures that seats are not double-booked and handles scenarios when seats are already occupied.
+
+Staff Management and Notifications
+
+-Staff members can register accounts with similar functionalities as users.
+-Staff members receive real-time notifications when a bus's seats are full or when system errors occur.
+-A communication feature allows staff to contact users in case of any issues or changes in their bookings.
+-Prompt Confirmation: The system ensures swift responses by confirming bookings via email.
+
+Payment Integration
+
+-The system integrates with popular payment gateways to facilitate secure and seamless online transactions.
+-Users can select their preferred payment method and make payments for their booked tickets.
+
+Admin Dashboard and Monitoring
+
+-An admin dashboard provides a comprehensive overview of the system's activities and performance.
+-Admins can monitor staff activities, check attendance records, and manage user complaints or issues.
+-The dashboard includes detailed reports on ticket sales, revenue, and other key metrics, with the ability to filter data by various time periods.
+
+Advanced Features (optional)
+
+-Integration with GPS tracking to provide real-time bus location updates for users.
+-Support for multiple languages and currencies to cater to a diverse user base.
+-Integration with SMS or email notifications to send booking confirmations, reminders, and updates to users.
+
+3. Activity Diagram
+
+User Books a Ticket:
+
+-The activity starts with the user browsing available services.
+-The user can register or log in if not already authenticated.
+-After authentication, the user selects a transport service and initiates the booking process.
+-The system processes the booking request.
+
+Booking Process:
+
+-The system creates a new instance of the Booking class, associating it with the selected user, transport service, and bus.
+-The user provides necessary details for the booking, such as the number of seats and payment information.
+-The system validates the information and calculates the total amount for the booking.
+
+Payment Processing:
+
+-The user initiates the payment process.
+-The system creates a Payment instance, associates it with the booking, and calculates the total amount.
+-The user selects a payment method (e.g., credit card, cash).
+-The system processes the payment, updating the payment status and confirming the booking.
+
+Bus Seat Update:
+
+-After successful payment, the system updates the available seats on the selected bus.
+-The Bus class's updateAvailableSeats method is invoked, reducing the available seats by the booked amount.
+
+Inquiry Submission:
+
+-The user can submit inquiries at any point.
+-The system creates an instance of the Inquiry class and associates it with the user.
+-The inquiry is processed, and the system manages inquiries based on their status.
+
+User Management:
+-The system allows users to manage their bookings and inquiries.
+-Users can view their booking history, cancel bookings, or check the status of inquiries.
+
+System Administration:
+-Administrative users can manage transport services, buses, and user accounts.
+-They can add or remove services, update bus information, and view user details.
+
+End of Activity:
+-The activity concludes when the user completes the desired actions (booking, payment, inquiry) or logs out.
